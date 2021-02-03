@@ -3,7 +3,7 @@ package com.tactfactory.designpattern.command;
 import java.util.ArrayList;
 
 public class GlobalStock {
-	public ArrayList<Stock> globalStock;
+	private ArrayList<Stock> globalStock = new ArrayList<Stock>();
 
 	private Invoker invoker = new Invoker();
 	
@@ -16,5 +16,11 @@ public class GlobalStock {
 	 public void showHistory() {
 	    this.invoker.showHistory();
      }
+
+	public ArrayList<Stock> getGlobalStock() {
+		return globalStock;
+	}
+	 
+	 
 	
 }

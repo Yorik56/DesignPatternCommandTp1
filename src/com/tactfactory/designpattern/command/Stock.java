@@ -2,7 +2,7 @@ package com.tactfactory.designpattern.command;
 
 public class Stock {
 	private String Name;
-	private Integer Quantity;
+	private Integer Quantity = 0;
 	private GlobalStock StockName;
 	
 	public Stock(String name, Integer quantity, GlobalStock stockName) {
